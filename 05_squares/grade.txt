@@ -1,46 +1,8 @@
-Grading at Sun Sep 29 04:05:32 UTC 2019
+Grading at Wed Oct  2 04:20:13 UTC 2019
 Trying to compile your code and link with squares_test.o
-squares.c: In function ‘isInRange’:
-squares.c:12:11: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-   if(coord>=offset|coord<offset+size)
-           ^
-squares.c: In function ‘isAtBorder’:
-squares.c:25:11: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-   if(coord==offset | coord==offset+size)
-           ^
 squares.c: In function ‘squares’:
-squares.c:53:13: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-             ^
-squares.c:53:43: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-                                           ^
-squares.c:53:41: error: suggest parentheses around arithmetic in operand of ‘|’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-                                         ^
-squares.c:53:79: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-                                                                               ^
-squares.c:53:109: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-                                                                                                             ^
-squares.c:53:107: error: suggest parentheses around arithmetic in operand of ‘|’ [-Werror=parentheses]
-       if(((x>=x_offset|x<x_offset+size2)&y==y_offset|y==y_offset+size2 -1)|((y>=y_offset|y<y_offset+size2)&x==x_offset|x==x_offset+size2 -1))
-                                                                                                           ^
-squares.c:61:25: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-       else if(x<size1&(y==0|y==size1-1)|y<size1&(x==0|x==size1-1))
-                         ^
-squares.c:61:16: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
-       else if(x<size1&(y==0|y==size1-1)|y<size1&(x==0|x==size1-1))
-                ^
-squares.c:61:51: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
-       else if(x<size1&(y==0|y==size1-1)|y<size1&(x==0|x==size1-1))
-                                                   ^
-squares.c:61:42: error: suggest parentheses around comparison in operand of ‘&’ [-Werror=parentheses]
-       else if(x<size1&(y==0|y==size1-1)|y<size1&(x==0|x==size1-1))
-                                          ^
-squares.c:61:22: error: suggest parentheses around arithmetic in operand of ‘|’ [-Werror=parentheses]
-       else if(x<size1&(y==0|y==size1-1)|y<size1&(x==0|x==size1-1))
+squares.c:62:22: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+       else if(x<size1&&(y==0||y==size1-1)||y<size1&&(x==0||x==size1-1))
                       ^
 cc1: all warnings being treated as errors
 Could not compile your code
