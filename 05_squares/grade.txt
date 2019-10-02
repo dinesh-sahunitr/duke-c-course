@@ -1,4 +1,4 @@
-Grading at Wed Oct  2 04:20:13 UTC 2019
+Grading at Wed Oct  2 04:20:35 UTC 2019
 Trying to compile your code and link with squares_test.o
 squares.c: In function ‘squares’:
 squares.c:62:22: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
